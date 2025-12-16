@@ -456,7 +456,7 @@ nav a {
 }
 .project-card {
   background: #ffffff;
-  border-radius: 18px;
+  border-radius: 5px;
   overflow: hidden;
   border: 1px solid #eef0f6;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -997,7 +997,8 @@ nav a {
 /* timeline */
 .timeline {
   position: relative;
-  padding-left: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
   display: grid;
   row-gap: 20px;
 }
@@ -1017,7 +1018,7 @@ nav a {
   position: relative;
   padding: 25px;
   background: #fff;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border: 1px solid #f0f0f5;
   transition: 0.3s ease;
