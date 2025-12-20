@@ -25,3 +25,43 @@ function openMenu() {
 function closeMenu() {
   document.getElementById("mobileMenu").classList.remove("active");
 }
+
+const scroll_up = document.getElementById("scroll-up");
+
+// Show button after scrolling down
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scroll_up.classList.add("show");
+  } else {
+    scroll_up.classList.remove("show");
+  }
+});
+
+// Scroll to top on click
+scroll_up.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+const reveals = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver( //This observer watches elements and tells us when they enter the viewport
+  (entries) => {
+    ///list of elements being observed right now
+    entries.forEach((entry) => {
+      //Loop through each observed element
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        revealObserver.unobserve(entry.target); // stops animation from repeating.
+      }
+    });
+  },
+  {
+    threshold: 0.15, // 15% visible triggers animation
+  }
+);
+reveals.forEach((section) => {
+  revealObserver.observe(section);
+});

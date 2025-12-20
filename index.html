@@ -7,12 +7,15 @@
   <title>Atanu China — Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-
+  <script src="https://kit.fontawesome.com/2985d60c8b.js" crossorigin="anonymous"></script>
   <!-- External CSS -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
+  <div class="scroll-up" id="scroll-up">
+    <i class="fas fa-angle-up"></i>
+  </div>
   <div class="container">
     <header class="hero-nav" id="hero-nav">
       <div class="brand">Atanu China</div>
@@ -68,502 +71,490 @@
 
               <div class="hero-ctas">
                 <a class="btn-primary" href="#portfolio">Get Started</a>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/atanu-china/" aria-label="LinkedIn">in</a>
+
+                  <a href="https://github.com/atanuchina07" aria-label="GitHub">⌘</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+      </section>
+      <!-- ABOUT -->
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about-section reveal">
+        <div class="container-lg about-grid">
+          <!-- LEFT VISUAL -->
+          <div class="about-visual">
+            <div class="visual-card" aria-hidden="true">
+              <!-- soft overlapping circles are pure CSS -->
+              <div class="circle circle-1"></div>
+              <div class="circle circle-2"></div>
+              <div class="circle circle-3"></div>
+            </div>
+
+            <!-- floating stat badges -->
+            <div class="badge badge-top">
+              <div class="b-num">2+</div>
+              <div class="b-label">Complete Projects</div>
+            </div>
+
+            <div class="badge badge-bottom">
+              <div class="b-num">1+</div>
+              <div class="b-label">Year Experience</div>
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="about-content">
+            <div class="kicker">ABOUT ME</div>
+            <h2 class="about-title">
+              Developing Web Application
+            </h2>
+
+            <p class="about-desc">
+              I'm a passionate full stack .net developer with 1+ year of
+              experience. Skilled in building scalable REST APIs, designing responsive UIs, and delivering reliable
+              full-stack web solutions. Strong in debugging,
+              clean architecture, performance optimization, and secure application development.
+            </p>
+
+            <ul class="about-features">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" fill="#efe8ff"></circle>
+                  <path d="M9.5 12.5l1.7 1.7L15 10" fill="none" stroke="#5b3df6" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="feat-text">
+                  <strong>2+ Complete Projects</strong>
+                  <div class="feat-sub">
+                    Delivered projects across multiple domains with measurable
+                    impact.
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" fill="#efe8ff"></circle>
+                  <path d="M9.5 12.5l1.7 1.7L15 10" fill="none" stroke="#5b3df6" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="feat-text">
+                  <strong>1+ Year of Experience</strong>
+                  <div class="feat-sub">
+                    Expertise in building full stack web aplication with .NET plus Angular.
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <a class="btn-cv" href="Your_CV.pdf" download>⬇ Download CV</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="skills-section reveal">
+        <div class="container-lg">
+          <div class="skills-header">
+            <span class="kicker">SKILLS</span>
+            <h2 class="skills-title">Technical Skills & Capabilities</h2>
+            <p class="skills-sub">
+              A snapshot of my technical expertise across frontend, backend,
+              databases, and tools.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- FRONTEND -->
+            <div class="skill-card">
+              <h3>Frontend</h3>
+
+              <div class="skill">
+                <span>Angular</span>
+                <div class="bar">
+                  <div style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>TypeScript</span>
+                <div class="bar">
+                  <div style="width: 80%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="bar">
+                  <div style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Bootstrap</span>
+                <div class="bar">
+                  <div style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- BACKEND -->
+            <div class="skill-card">
+              <h3>Backend</h3>
+
+              <div class="skill">
+                <span>C#</span>
+                <div class="bar">
+                  <div style="width: 90%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>ASP.NET Core</span>
+                <div class="bar">
+                  <div style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Web API</span>
+                <div class="bar">
+                  <div style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>SignalR</span>
+                <div class="bar">
+                  <div style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- DATABASE -->
+            <div class="skill-card">
+              <h3>Database</h3>
+
+              <div class="skill">
+                <span>Microsoft SQL Server</span>
+                <div class="bar">
+                  <div style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Entity Framework Core</span>
+                <div class="bar">
+                  <div style="width: 88%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>LINQ</span>
+                <div class="bar">
+                  <div style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TOOLS -->
+            <div class="skill-card">
+              <h3>Tools & DevOps</h3>
+              <div class="skill">
+                <span>Git & GitHub</span>
+                <div class="bar">
+                  <div style="width: 85%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>Postman & Sweagger</span>
+                <div class="bar">
+                  <div style="width: 80%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>IIS</span>
+                <div class="bar">
+                  <div style="width: 75%"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <span>CI/CD (Github Actions)</span>
+                <div class="bar">
+                  <div style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience" class="experience-section reveal">
+        <div class="container-lg">
+          <div class="exp-header">
+            <span class="kicker">PROJECTS</span>
+            <h2 class="exp-title">Experience</h2>
+            <p class="project-sub">
+              A selection of full-stack applications showcasing my experience
+              in .NET, Angular, and modern web development.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <!-- COMPANY -->
+            <div class="company-header">
+              <div class="company-logo">PT</div>
+              <div>
+                <h3>Primetals Technologies</h3>
+                <p class="company-meta">
+                  Full-time · 1 yr 5 mos<br />
+                  Kolkata, West Bengal, India · On-site
+                </p>
+              </div>
+            </div>
+
+            <!-- TIMELINE -->
+            <div class="timeline">
+              <!-- ROLE 1 -->
+              <div class="timeline-item">
+                <div class="dot"></div>
+
+                <div class="content">
+                  <h4>Assistant Manager (Software Development Engineer)</h4>
+                  <span class="duration">Aug 2025 - Present · 5 mos</span>
+
+                  <ul>
+                    <li>
+                      Leading onsite commissioning and development of Web HMI
+                      solutions using ASP.NET Core 8, Razor Pages, and
+                      AJAX-based controller communication for real-time
+                      industrial process visualization.
+                    </li>
+                    <li>
+                      Developed Web HMI solutions using ASP.NET Boilerplate
+                      (.NET 8) and Angular 14, implementing lazy-loaded
+                      modules to enhance performance and scalability.
+                    </li>
+                  </ul>
+
+                  <p class="skills">
+                    <strong>Skills:</strong>
+                    Full Stack .NET Developer · ASP.NET Core · Web API ·
+                    Angular · EF Core · SQL Server · SignalR · JavaScript ·
+                    TypeScript · Bootstrap · SSRS · IIS · Git · CI/CD
+                  </p>
+                </div>
+              </div>
+
+              <!-- ROLE 2 -->
+              <div class="timeline-item">
+                <div class="dot"></div>
+
+                <div class="content">
+                  <h4>
+                    Graduate Engineering Trainee (Software Development
+                    Engineer)
+                  </h4>
+                  <span class="duration">Aug 2024 – Jul 2025 · 1 yr</span>
+
+                  <ul>
+                    <li>
+                      Built Web HMI and industrial UI modules using ASP.NET
+                      Core 6, Razor Pages, AJAX, and Kendo UIand SQL Server.
+                    </li>
+                    <li>
+                      Optimized SQL queries, reducing data load time by 90% (3
+                      minutes → 20–30 seconds).
+                    </li>
+                  </ul>
+
+                  <p class="skills">
+                    <strong>Skills:</strong>
+                    C# · ASP.NET Core · MVC · Razor Pages · EF Core · SQL
+                    Server · AJAX · Kendo UI · Bootstrap · SSRS · IIS · Git
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT SECTION -->
+      <section id="projects" class="project-section reveal">
+        <div class="container-lg">
+          <div class="project-header">
+            <span class="kicker">PROJECTS</span>
+            <h2 class="project-title">My Featured Projects</h2>
+            <p class="project-sub">
+              A selection of full-stack applications showcasing my experience
+              in .NET, Angular, and modern web development.
+            </p>
+          </div>
+          <!-- PROJECT CARDS GRID -->
+          <div class="project-cards">
+            <!-- CARD 1 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/DatyHub.png" alt="SaaS Landing Page">
+                <!-- HOVER OVERLAY -->
+                <a href="https://github.com/atanuchina07/DatingApp.API" class="view-project">View Project →</a>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">DatyHub</span>
+                <h3>Dating Web Application</h3>
+                <p>Created modern dating application with secure signin, login, like, connect and realtime, messaging
+                  features using ASP .Net Core, Angular, CI/CD Pipelines..</p>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/BookStore.png" alt="SaaS Landing Page">
+                <!-- HOVER OVERLAY -->
+                <a href="https://github.com/atanuchina07/ACBookCenter.Web" class="view-project">View Project →</a>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">ACBookStore</span>
+                <h3>Bookstore Web Application</h3>
+                <p>Created user freindly web application where has various features including realtime rating page sung
+                  ASP.Net Core and Razor Pages..</p>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/ExpenceTracker.png" alt="SaaS Landing Page">
+                <!-- HOVER OVERLAY -->
+                <a href="https://github.com/atanuchina07/Expense.API" class="view-project">View Project →</a>
+              </div>
+              <div class="project-body">
+                <span class="project-tag">Expense Tracker</span>
+                <h3>Expense Tracker Web Application</h3>
+                <p>Created user freindly ExpenceTracker application where uses JWT tokenization Angular and .Net Core
+                  Web
+                  API.. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="education-section reveal">
+        <div class="container-lg">
+
+          <div class="edu-header">
+            <span class="kicker">EDUCATION</span>
+            <h2 class="edu-title">Academic Background</h2>
+            <p class="edu-sub">
+              My formal education that laid the foundation for my software engineering career.
+            </p>
+          </div>
+
+          <div class="edu-wrapper">
+            <div class="edu-card">
+
+              <!-- HEADER -->
+              <div class="edu-top">
+                <div class="edu-icon">🎓</div>
+
+                <div class="edu-main">
+                  <h3>Bachelor of Technology (B.Tech)</h3>
+                  <p class="edu-stream">Computer Science & Engineering</p>
+
+                  <div class="edu-meta-row">
+                    <span class="edu-year">2020 – 2024</span>
+                    <span class="edu-cgpa">CGPA: 8.4 / 10</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- BODY -->
+              <div class="edu-body">
+                <p class="edu-institute">
+                  XYZ Institute of Technology, Kolkata, West Bengal
+                </p>
+
+                <p class="edu-desc">
+                  Studied core computer science subjects including Data Structures, DBMS,
+                  Operating Systems, OOP, and Software Engineering, with hands-on projects
+                  in web development and database-driven applications.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact-section reveal">
+        <div class="container-lg contact-grid">
+          <!-- LEFT CONTENT -->
+          <div class="contact-content">
+            <span class="kicker">CONTACT</span>
+
+            <h2 class="contact-title">
+              Got A Project! <br />
+              Let's Talk
+            </h2>
+
+            <p class="contact-desc">
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision. Let's create something
+              amazing together!
+            </p>
+
+            <!-- CONTACT INFO -->
+            <div class="contact-info">
+              <div class="info-item">
+                <div class="info-icon email">✉</div>
+                <div>
+                  <span>Email: </span>
+                  <strong>atanuchina0709@gmail.com</strong>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon phone">☎</div>
+                <div>
+                  <span>Phone: </span>
+                  <strong>+91 9932563467</strong>
+                </div>
+              </div>
+            </div>
+
+            <a href="mailto:atanuchina0709@gmail.com" class="contact-btn">
+              💬 Contact Me
+            </a>
+          </div>
+
+          <!-- RIGHT VISUAL -->
+          <div class="contact-visual">
+            <div class="visual-card">
+              <!-- circles -->
+              <div class="circle c1"></div>
+              <div class="circle c2"></div>
+
+              <!-- floating icons -->
+              <div class="float-icon fi-mail">✉</div>
+              <div class="float-icon fi-chat">💬</div>
+            </div>
+          </div>
+        </div>
+      </section>
   </div>
-  </section>
-  <!-- ABOUT -->
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about-section">
-    <div class="container-lg about-grid">
-      <!-- LEFT VISUAL -->
-      <div class="about-visual">
-        <div class="visual-card" aria-hidden="true">
-          <!-- soft overlapping circles are pure CSS -->
-          <div class="circle circle-1"></div>
-          <div class="circle circle-2"></div>
-          <div class="circle circle-3"></div>
-        </div>
-
-        <!-- floating stat badges -->
-        <div class="badge badge-top">
-          <div class="b-num">2+</div>
-          <div class="b-label">Complete Projects</div>
-        </div>
-
-        <div class="badge badge-bottom">
-          <div class="b-num">1+</div>
-          <div class="b-label">Year Experience</div>
-        </div>
-      </div>
-
-      <!-- RIGHT CONTENT -->
-      <div class="about-content">
-        <div class="kicker">ABOUT ME</div>
-        <h2 class="about-title">
-          Developing Web Application
-        </h2>
-
-        <p class="about-desc">
-          I'm a passionate full stack .net developer with 1+ year of
-          experience. Skilled in building scalable REST APIs, designing responsive UIs, and delivering reliable
-          full-stack web solutions. Strong in debugging,
-          clean architecture, performance optimization, and secure application development.
-        </p>
-
-        <ul class="about-features">
-          <li>
-            <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" fill="#efe8ff"></circle>
-              <path d="M9.5 12.5l1.7 1.7L15 10" fill="none" stroke="#5b3df6" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-            <div class="feat-text">
-              <strong>2+ Complete Projects</strong>
-              <div class="feat-sub">
-                Delivered projects across multiple domains with measurable
-                impact.
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <svg class="icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" fill="#efe8ff"></circle>
-              <path d="M9.5 12.5l1.7 1.7L15 10" fill="none" stroke="#5b3df6" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-            <div class="feat-text">
-              <strong>1+ Year of Experience</strong>
-              <div class="feat-sub">
-                Expertise in building full stack web aplication with .NET plus Angular.
-              </div>
-            </div>
-          </li>
-        </ul>
-        <a class="btn-cv" href="Your_CV.pdf" download>⬇ Download CV</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="skills-section">
-    <div class="container-lg">
-      <div class="skills-header">
-        <span class="kicker">SKILLS</span>
-        <h2 class="skills-title">Technical Skills & Capabilities</h2>
-        <p class="skills-sub">
-          A snapshot of my technical expertise across frontend, backend,
-          databases, and tools.
-        </p>
-      </div>
-
-      <div class="skills-grid">
-        <!-- FRONTEND -->
-        <div class="skill-card">
-          <h3>Frontend</h3>
-
-          <div class="skill">
-            <span>Angular</span>
-            <span>85%</span>
-            <div class="bar">
-              <div style="width: 85%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>TypeScript</span>
-            <span>80%</span>
-            <div class="bar">
-              <div style="width: 80%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>HTML & CSS</span>
-            <span>90%</span>
-            <div class="bar">
-              <div style="width: 90%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>Bootstrap</span>
-            <span>85%</span>
-            <div class="bar">
-              <div style="width: 85%"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- BACKEND -->
-        <div class="skill-card">
-          <h3>Backend</h3>
-
-          <div class="skill">
-            <span>C#</span>
-            <span>90%</span>
-            <div class="bar">
-              <div style="width: 90%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>ASP.NET Core</span>
-            <span>88%</span>
-            <div class="bar">
-              <div style="width: 88%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>Web API</span>
-            <span>85%</span>
-            <div class="bar">
-              <div style="width: 85%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>SignalR</span>
-            <span>75%</span>
-            <div class="bar">
-              <div style="width: 75%"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- DATABASE -->
-        <div class="skill-card">
-          <h3>Database</h3>
-
-          <div class="skill">
-            <span>SQL Server</span>
-            <span>85%</span>
-            <div class="bar">
-              <div style="width: 85%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>Entity Framework Core</span>
-            <span>88%</span>
-            <div class="bar">
-              <div style="width: 88%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>LINQ</span>
-            <span>80%</span>
-            <div class="bar">
-              <div style="width: 80%"></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TOOLS -->
-        <div class="skill-card">
-          <h3>Tools & DevOps</h3>
-
-          <div class="skill">
-            <span>Git & GitHub</span>
-            <span>85%</span>
-            <div class="bar">
-              <div style="width: 85%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>Postman</span>
-            <span>80%</span>
-            <div class="bar">
-              <div style="width: 80%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>IIS</span>
-            <span>75%</span>
-            <div class="bar">
-              <div style="width: 75%"></div>
-            </div>
-          </div>
-
-          <div class="skill">
-            <span>CI/CD</span>
-            <span>70%</span>
-            <div class="bar">
-              <div style="width: 70%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- EXPERIENCE SECTION -->
-  <section id="experience" class="experience-section">
-    <div class="container-lg">
-      <div class="exp-header">
-        <span class="kicker">PROJECTS</span>
-        <h2 class="exp-title">Experience</h2>
-        <p class="project-sub">
-          A selection of full-stack applications showcasing my experience
-          in .NET, Angular, and modern web development.
-        </p>
-      </div>
-
-      <div class="experience-card">
-        <!-- COMPANY -->
-        <div class="company-header">
-          <div class="company-logo">PT</div>
-          <div>
-            <h3>Primetals Technologies</h3>
-            <p class="company-meta">
-              Full-time · 1 yr 5 mos<br />
-              Kolkata, West Bengal, India · On-site
-            </p>
-          </div>
-        </div>
-
-        <!-- TIMELINE -->
-        <div class="timeline">
-          <!-- ROLE 1 -->
-          <div class="timeline-item">
-            <div class="dot"></div>
-
-            <div class="content">
-              <h4>Assistant Manager (Software Development Engineer)</h4>
-              <span class="duration">Aug 2025 - Present · 5 mos</span>
-
-              <ul>
-                <li>
-                  Leading onsite commissioning and development of Web HMI
-                  solutions using ASP.NET Core 8, Razor Pages, and
-                  AJAX-based controller communication for real-time
-                  industrial process visualization.
-                </li>
-                <li>
-                  Developed Web HMI solutions using ASP.NET Boilerplate
-                  (.NET 8) and Angular 14, implementing lazy-loaded
-                  modules to enhance performance and scalability.
-                </li>
-              </ul>
-
-              <p class="skills">
-                <strong>Skills:</strong>
-                Full Stack .NET Developer · ASP.NET Core · Web API ·
-                Angular · EF Core · SQL Server · SignalR · JavaScript ·
-                TypeScript · Bootstrap · SSRS · IIS · Git · CI/CD
-              </p>
-            </div>
-          </div>
-
-          <!-- ROLE 2 -->
-          <div class="timeline-item">
-            <div class="dot"></div>
-
-            <div class="content">
-              <h4>
-                Graduate Engineering Trainee (Software Development
-                Engineer)
-              </h4>
-              <span class="duration">Aug 2024 – Jul 2025 · 1 yr</span>
-
-              <ul>
-                <li>
-                  Built Web HMI and industrial UI modules using ASP.NET
-                  Core 6, Razor Pages, AJAX, and Kendo UIand SQL Server.
-                </li>
-                <li>
-                  Optimized SQL queries, reducing data load time by 90% (3
-                  minutes → 20–30 seconds).
-                </li>
-              </ul>
-
-              <p class="skills">
-                <strong>Skills:</strong>
-                C# · ASP.NET Core · MVC · Razor Pages · EF Core · SQL
-                Server · AJAX · Kendo UI · Bootstrap · SSRS · IIS · Git
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECT SECTION -->
-  <section id="projects" class="project-section">
-    <div class="container-lg">
-      <div class="project-header">
-        <span class="kicker">PROJECTS</span>
-        <h2 class="project-title">My Featured Projects</h2>
-        <p class="project-sub">
-          A selection of full-stack applications showcasing my experience
-          in .NET, Angular, and modern web development.
-        </p>
-      </div>
-      <!-- PROJECT CARDS GRID -->
-      <div class="project-cards">
-        <!-- CARD 1 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/DatyHub.png" alt="SaaS Landing Page">
-            <!-- HOVER OVERLAY -->
-            <a href="#" class="view-project">View Project →</a>
-          </div>
-          <div class="project-body">
-            <span class="project-tag">DatyHub</span>
-            <h3>Dating Web Application</h3>
-            <p>Created modern dating application with secure signin, login, like, connect and realtime, messaging
-              features using ASP .Net Core, Angular, CI/CD Pipelines..</p>
-          </div>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/BookStore.png" alt="SaaS Landing Page">
-            <!-- HOVER OVERLAY -->
-            <a href="#" class="view-project">View Project →</a>
-          </div>
-          <div class="project-body">
-            <span class="project-tag">ACBookStore</span>
-            <h3>Bookstore Web Application</h3>
-            <p>Created user freindly web application where has various features including realtime rating page sung
-              ASP.Net Core and Razor Pages..</p>
-          </div>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="project-card">
-          <div class="project-image">
-            <img src="images/ExpenceTracker.png" alt="SaaS Landing Page">
-            <!-- HOVER OVERLAY -->
-            <a href="#" class="view-project">View Project →</a>
-          </div>
-          <div class="project-body">
-            <span class="project-tag">Expense Tracker</span>
-            <h3>Expense Tracker Web Application</h3>
-            <p>Created user freindly ExpenceTracker application where uses JWT tokenization Angular and .Net Core Web
-              API.. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- EDUCATION SECTION -->
-  <section id="education" class="education-section">
-    <div class="container-lg">
-
-      <div class="edu-header">
-        <span class="kicker">EDUCATION</span>
-        <h2 class="edu-title">Academic Background</h2>
-        <p class="edu-sub">
-          My formal education that laid the foundation for my software engineering career.
-        </p>
-      </div>
-
-      <div class="edu-wrapper">
-        <div class="edu-card">
-
-          <!-- HEADER -->
-          <div class="edu-top">
-            <div class="edu-icon">🎓</div>
-
-            <div class="edu-main">
-              <h3>Bachelor of Technology (B.Tech)</h3>
-              <p class="edu-stream">Computer Science & Engineering</p>
-
-              <div class="edu-meta-row">
-                <span class="edu-year">2020 – 2024</span>
-                <span class="edu-cgpa">CGPA: 8.4 / 10</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- BODY -->
-          <div class="edu-body">
-            <p class="edu-institute">
-              XYZ Institute of Technology, Kolkata, West Bengal
-            </p>
-
-            <p class="edu-desc">
-              Studied core computer science subjects including Data Structures, DBMS,
-              Operating Systems, OOP, and Software Engineering, with hands-on projects
-              in web development and database-driven applications.
-            </p>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact-section">
-    <div class="container-lg contact-grid">
-      <!-- LEFT CONTENT -->
-      <div class="contact-content">
-        <span class="kicker">CONTACT</span>
-
-        <h2 class="contact-title">
-          Got A Project! <br />
-          Let's Talk
-        </h2>
-
-        <p class="contact-desc">
-          I'm always open to discussing new projects, creative ideas, or
-          opportunities to be part of your vision. Let's create something
-          amazing together!
-        </p>
-
-        <!-- CONTACT INFO -->
-        <div class="contact-info">
-          <div class="info-item">
-            <div class="info-icon email">✉</div>
-            <div>
-              <span>Email: </span>
-              <strong>atanuchina0709@gmail.com</strong>
-            </div>
-          </div>
-
-          <div class="info-item">
-            <div class="info-icon phone">☎</div>
-            <div>
-              <span>Phone: </span>
-              <strong>+91 9932563467</strong>
-            </div>
-          </div>
-        </div>
-
-        <a href="mailto:atanuchina0709@gmail.com" class="contact-btn">
-          💬 Contact Me
-        </a>
-      </div>
-
-      <!-- RIGHT VISUAL -->
-      <div class="contact-visual">
-        <div class="visual-card">
-          <!-- circles -->
-          <div class="circle c1"></div>
-          <div class="circle c2"></div>
-
-          <!-- floating icons -->
-          <div class="float-icon fi-mail">✉</div>
-          <div class="float-icon fi-chat">💬</div>
-        </div>
-      </div>
-    </div>
-  </section>
   </main>
 
   <!-- FOOTER -->
@@ -578,9 +569,9 @@
         </p>
 
         <div class="social-links">
-          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="https://www.linkedin.com/in/atanu-china/" aria-label="LinkedIn">in</a>
 
-          <a href="#" aria-label="GitHub">⌘</a>
+          <a href="https://github.com/atanuchina07" aria-label="GitHub">⌘</a>
         </div>
       </div>
 

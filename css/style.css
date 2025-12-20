@@ -9,6 +9,51 @@ body {
   background: white;
   color: #0b1220;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-up {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: #ffb020;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  /* IMPORTANT */
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
+}
+
+.scroll-up.show {
+  opacity: 1;
+  pointer-events: auto;
+  bottom: 30px;
+}
+/* SCROLL REVEAL BASE */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+/* WHEN VISIBLE */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -1388,12 +1433,12 @@ nav a {
 .social-links a {
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.08);
+  background: #e5e7eb;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: #081022;
   font-weight: 700;
   text-decoration: none;
   transition: background 0.3s ease, transform 0.3s ease;
